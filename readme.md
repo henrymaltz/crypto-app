@@ -8,10 +8,13 @@ To get started with the Crypto Price App, follow these steps:
 git clone https://github.com/henrymaltz/crypto-app.git
 cd crypto-app
 
-2. Create Docker containers:
+2. Create a .env file by copying .env.example:
+cp .env.example .env
+
+3. Create Docker containers:
 docker-compose up -d
 
-3. Run database migrations:
+4. Run database migrations:
 docker-compose exec php_fpm php artisan migrate
 
 ## Usage
